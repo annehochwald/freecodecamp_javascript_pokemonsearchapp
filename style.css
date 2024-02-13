@@ -1,0 +1,165 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  background: #064273;
+  color: black;
+  font-family: Arial, sans-serif;
+};
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.container {
+  width: 380px;
+  margin: 90px auto;
+  padding: 40px;
+  background: #def3f6;
+  border: 1px solid #1da2d8;
+  border-radius: 13px;
+  box-shadow: 0 0 0 10px red, 
+              0 0 0 20px orange,
+              0 0 0 30px yellow,
+              0 0 0 40px green,
+              0 0 0 50px blue,
+              0 0 0 60px indigo;
+}
+
+.output,
+#search-form {
+  display: flex;
+  justify-content: center;
+}
+
+#search-form {
+  flex-wrap: wrap;
+  padding: 9px;
+  border-radius: 9px 9px 0 0;
+  gap: 10px;
+}
+
+label {
+  align-self: center;
+}
+
+#search-input:focus-visible,
+#search-button:focus-visible {
+  outline: 4px solid #76b6c4;
+}
+
+#search-input {
+  height: 40px;
+  padding-left: 10px;
+  width: 230px;
+  font-size: 1.3rem;
+}
+
+#search-button {
+  padding: 14px 0;
+  width: 80px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: #1da2d8;
+  color: #f5f6f7;
+  font-size: 1rem;
+}
+
+.output {
+  margin: 15px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-output,
+.bottom-output {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #76b6c4;
+  border-radius: 3px;
+}
+
+.name-and-id {
+  height: 30px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.size {
+  height: 22px;
+  font-size: 0.85rem;
+}
+
+.sprite-container {
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sprite {
+  width: 200px;
+}
+
+#types {
+  min-height: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 1rem;
+  color: white;
+  background-color: #064273;
+}
+
+th:nth-child(even),
+td:nth-child(even) {
+  border-left: 5px solid white;
+}
+
+tr {
+  border: 5px solid white;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 10px;
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    width: 450px;
+  }
+
+  #search-form,
+  .top-output,
+  .bottom-output {
+    width: 95%;
+  }
+}
